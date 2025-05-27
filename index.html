@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planova - To Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="todo-box slide-in">
+      <div class="header">
+        <div class="title-section">
+          <h1>🪄 TO DO LIST</h1>
+          <p class="quote">"Plan your work and work your plan."</p>
+        </div>
+        <div class="progress-section">
+          <label for="progress">Progress</label>
+          <progress id="progress" value="0" max="100"></progress>
+        </div>
+      </div>
+      <form id="task-form">
+        <input
+          type="text"
+          id="task-input"
+          placeholder="Enter your task"
+          required
+        />
+        <button type="submit" id="add-btn"><b>ADD</b></button>
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="Not completed">Not Completed</option>
+            </select>
+        </div>
+      </form>
+      <ul id="task-list"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
